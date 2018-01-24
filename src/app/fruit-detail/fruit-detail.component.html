@@ -1,0 +1,7 @@
+<section class="fruits-list" *ngIf="fruit">
+  <div class="fruit">
+    <h2 class="fruit-name-h">{{fruit.name}}</h2>
+    <h3 class="fruit-info">{{fruit.isSweet ? ("It's very sweet" | uppercase): ("It's not sweet" | uppercase)}}{{!fruit.isFruit ? " but this is not a fruit :(" : " and it is a fruit!"}}</h3>
+    <label> <p class="name-p">name:</p> <input class="fruit-name-input" [(ngModel)]="fruit.name" placeholder="name" /> </label>
+  </div>
+</section>

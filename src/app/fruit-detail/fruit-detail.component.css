@@ -1,0 +1,41 @@
+.fruits-list {
+  list-style-type: none;
+  margin: 40% 0;
+}
+
+.fruit {
+  background-color: lightblue;
+  width: 305px;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: content-box;
+  margin: 10px;
+  text-align: center;
+}
+
+.fruit-name-h {
+  line-height: 0;
+  margin-top: 3px;
+  font-size: 20px;
+}
+
+.fruit-info { font-size: 16px; }
+
+.name-p {
+  line-height: 0;
+  font-weight: 700;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+.fruit-name-input {
+  height: 20px;
+  width: auto;
+  font-size: 18px;
+  text-align: center;
+  background-color: lightblue;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px black;
+}
