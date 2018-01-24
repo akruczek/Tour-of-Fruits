@@ -1,0 +1,65 @@
+main {
+  display: flex;
+}
+
+.fruits-list {
+  list-style-type: none;
+  align-self: center;
+}
+
+.fruit {
+  background-color: lightblue;
+  width: 300px;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: content-box;
+  margin: 10px;
+  text-align: center;
+}
+
+.fruit-name-h, .fruit-name-h-select {
+  line-height: 0;
+  margin-top: 3px;
+  font-size: 20px;
+}
+
+.fruit-name-h-select {
+  margin-bottom: 3px;
+}
+
+.fruit-info {
+  font-size: 16px;
+}
+
+.name-p {
+  line-height: 0;
+  font-weight: 700;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+.select {
+  cursor: pointer;
+}
+
+.select:hover, .selected {
+  background-color: lightgrey;
+  animation: select 0.5s;
+}
+
+.fruit-name-input {
+  height: 20px;
+  width: auto;
+  font-size: 18px;
+  text-align: center;
+  background-color: lightblue;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px black;
+}
+
+@keyframes select {
+  from { background-color: lightblue; }
+  to { background-color: lightgrey; }
+}
