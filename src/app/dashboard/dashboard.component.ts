@@ -3,13 +3,13 @@ import { Fruit } from "./../fruit";
 import { FruitService } from "./../fruit.service";
 
 @Component({
-  selector: 'app-fruits',
-  templateUrl: './fruits.component.html',
-  styleUrls: ['./fruits.component.css']
+  selector: 'app-dashboard',
+  templateUrl: './dashboard.component.html',
+  styleUrls: ['./dashboard.component.css']
 })
-export class FruitsComponent implements OnInit {
+export class DashboardComponent implements OnInit {
 
-  fruits: Fruit[];
+  fruits: Fruit[] = [];
 
   constructor(private fruitService: FruitService) { }
 
@@ -18,7 +18,7 @@ export class FruitsComponent implements OnInit {
   }
 
   getFruits(): void {
-    this.fruitService.getFruits().subscribe(fruits => this.fruits = fruits);
+    this.fruitService.getFruits().subscribe(fruits => this.fruits = fruits.slice(1,5));
   }
 
 }

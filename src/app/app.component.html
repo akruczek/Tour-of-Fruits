@@ -1,5 +1,9 @@
 <section>
   <h1>{{title}}</h1>
-  <app-fruits></app-fruits>
+  <nav>
+    <a routerLink="/fruits">Fruits</a>
+    <a routerLink="/dashboard">Dashboard</a>
+  </nav>
+  <router-outlet></router-outlet>
   <app-messages></app-messages>
 </section>

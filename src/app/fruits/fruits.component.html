@@ -1,9 +1,10 @@
 <main>
   <ul class="fruits-list">
-    <li *ngFor="let fruit of fruits" (click)="onSelect(fruit)" class="fruit select" [class.selected]="fruit === selectedFruit">
+    <li *ngFor="let fruit of fruits" class="fruit select" [class.selected]="fruit === selectedFruit"
+      routerLink="/detail/{{fruit.id}}">
       <h2 class="fruit-name-h-select">{{fruit.name}}</h2>
     </li>
   </ul>
 
-  <app-fruit-detail [fruit]="selectedFruit" class="fruit-list"></app-fruit-detail>
+  <!-- <app-fruit-detail [fruit]="selectedFruit" class="fruit-list"></app-fruit-detail> -->
 </main>

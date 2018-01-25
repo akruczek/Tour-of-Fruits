@@ -15,4 +15,9 @@ export class FruitService {
     return  of(FRUITS);
   }
 
+  getFruit(id: number): Observable<Fruit> {
+    this.messageService.add(`FruitService: fetched fruit id=${id}`);
+    return of(FRUITS.find(fruit => fruit.id === id));
+  }
+
 }

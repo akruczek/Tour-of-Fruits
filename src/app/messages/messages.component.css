@@ -1,6 +1,7 @@
 .messages {
   position: absolute;
   bottom: 0;
+  right: 0;
   background-color: lightgreen;
   display: flex;
   flex-direction: column;
@@ -8,11 +9,16 @@
   box-sizing: content-box;
   width: 400px;
   border-radius: 20px;
+  animation: slideUp 1s;
+  overflow: hidden;
 }
 
 h2 { margin: 0; }
 
-h5 { line-height: 0; }
+h5 {
+  line-height: 0; margin: 10px;
+  animation: show 0.5s;
+}
 
 button {
   position: absolute;
@@ -24,4 +30,14 @@ button {
   font-size: 16px;
   font-weight: 600;
   background-color: darkgrey;
+}
+
+@keyframes slideUp {
+  from {width: 0;}
+  to {width: max;}
+}
+
+@keyframes show {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }

@@ -1,7 +1,8 @@
 .fruits-list {
   list-style-type: none;
-  margin: 40% 0;
   animation: showUp 0.5s;
+  position: absolute;
+  margin: 50px;
 }
 
 .fruit {
