@@ -1,6 +1,7 @@
 .fruits-list {
   list-style-type: none;
   margin: 40% 0;
+  animation: showUp 0.5s;
 }
 
 .fruit {
@@ -38,4 +39,9 @@
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 1px 1px 1px 1px black;
+}
+
+@keyframes showUp {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }

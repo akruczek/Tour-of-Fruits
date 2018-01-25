@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Fruit } from "./../fruit";
-import { FRUITS } from "./../mock-fruits";
+import { FruitService } from "./../fruit.service";
 
 @Component({
   selector: 'app-fruits',
@@ -9,14 +9,18 @@ import { FRUITS } from "./../mock-fruits";
 })
 export class FruitsComponent implements OnInit {
 
-  fruits = FRUITS;
+  fruits: Fruit[];
 
   selectedFruit: Fruit;
 
-  constructor() { }
+  constructor(private fruitService: FruitService) { }
 
   ngOnInit() {
+    this.getFruits();
+  }
 
+  getFruits(): void {
+    this.fruitService.getFruits().subscribe(fruits => this.fruits = fruits);
   }
 
   onSelect(fruit: Fruit): void {

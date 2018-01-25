@@ -1,0 +1,27 @@
+.messages {
+  position: absolute;
+  bottom: 0;
+  background-color: lightgreen;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-sizing: content-box;
+  width: 400px;
+  border-radius: 20px;
+}
+
+h2 { margin: 0; }
+
+h5 { line-height: 0; }
+
+button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 70px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: darkgrey;
+}
