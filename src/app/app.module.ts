@@ -13,6 +13,8 @@ import { AppRoutingModule } from './/app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientInMemoryWebApiModule } from "angular-in-memory-web-api";
 import { InMemoryDataService } from "./in-memory-data.service";
+import { HeroSearchComponent } from './hero-search/hero-search.component';
+import { FruitSearchComponent } from './fruit-search/fruit-search.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { InMemoryDataService } from "./in-memory-data.service";
     FruitsComponent,
     FruitDetailComponent,
     MessagesComponent,
-    DashboardComponent
+    DashboardComponent,
+    HeroSearchComponent,
+    FruitSearchComponent
   ],
   imports: [
     BrowserModule,

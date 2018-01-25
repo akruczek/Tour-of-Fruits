@@ -7,7 +7,7 @@
     </li>
   </ul>
 
-  <div class="add-fruit">
+  <div class="add-fruit" *ngIf="fruits">
     <h2>ADD YOUR OWN FRUIT HERE</h2>
     <label>Fruit Name: <input #fruitName /></label>
     <label>Is Sweet? <input type="checkbox" #fruitIsSweet />Yes!</label>

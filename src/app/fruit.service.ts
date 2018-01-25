@@ -78,4 +78,12 @@ export class FruitService {
     );
   }
 
+  searchFruits(term: string): Observable<Fruit[]> {
+    if (!term.trim()) { return of([]); }  //if not search term
+    return this.http.get<Fruit[]>(`api/fruits/?name=${term}`).pipe(
+      tap(_ => this.log(`found fruits matching "${term}"`)),
+      catchError(this.handleError<Fruit[]>("searchFruits", []))
+    );
+  }
+
 }
