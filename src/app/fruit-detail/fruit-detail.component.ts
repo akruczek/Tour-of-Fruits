@@ -24,6 +24,14 @@ export class FruitDetailComponent implements OnInit {
     this.getFruit();
   }
 
+  goBack(): void {
+    this.location.back();
+  }
+
+  save(): void {
+    this.fruitService.updateFruit(this.fruit).subscribe(() => this.goBack())
+  }
+
   getFruit(): void {
     const id = +this.route.snapshot.paramMap.get("id");
     this.fruitService.getFruit(id).subscribe(fruit => this.fruit = fruit);

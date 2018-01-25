@@ -42,6 +42,22 @@
   box-shadow: 1px 1px 1px 1px black;
 }
 
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.save-button {
+  width: 80px;
+  height: 30px;
+  font-weight: 700;
+  border-radius: 10px;
+  background-color: lightblue;
+  box-shadow: 1px 1px 1px 1px black;
+  cursor: pointer;
+}
+
 @keyframes showUp {
   from { opacity: 0; }
   to { opacity: 1; }

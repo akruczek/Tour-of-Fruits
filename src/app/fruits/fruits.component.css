@@ -15,6 +15,7 @@ main {
   box-sizing: content-box;
   margin: 10px;
   text-align: center;
+  position: relative;
 }
 
 .fruit-name-h, .fruit-name-h-select {
@@ -57,6 +58,46 @@ main {
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 1px 1px 1px 1px black;
+}
+
+.add-fruit {
+  background-color: rgba(255, 100, 0, 10);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+label {
+  font-weight: 600;
+  margin: 10px;
+}
+
+.delete {
+  position: absolute; right: 10px;
+  border-radius: 10px;
+  background-color: lightblue;
+  font-weight: 700;
+  top: 3px;
+  box-shadow: 1px 1px 1px 1px black;
+}
+
+.add-fruit-button {
+  width: 50px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px black;
+  font-weight: 700;
+  background-color: rgba(255, 100, 0, 10);
+  align-self: flex-end;
 }
 
 @keyframes select {

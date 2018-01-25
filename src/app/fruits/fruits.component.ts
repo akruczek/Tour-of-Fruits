@@ -21,4 +21,18 @@ export class FruitsComponent implements OnInit {
     this.fruitService.getFruits().subscribe(fruits => this.fruits = fruits);
   }
 
+  add(name: string, isSweet: boolean, isFruit: boolean): void {
+    name = name.trim();
+    if(!name) {return;}
+    this.fruitService.addFruit({name, isSweet, isFruit} as Fruit).subscribe(fruit => {
+      this.fruits.push(fruit);
+    });
+  }
+
+  delete (fruit: Fruit): void {
+    this.fruits = this.fruits.filter(f => f !== fruit);
+    this.fruitService.deleteFruit(fruit).subscribe();
+  }
+  //MUST BE [!] .subscribe() !important
+
 }

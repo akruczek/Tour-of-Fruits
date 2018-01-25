@@ -3,8 +3,16 @@
     <li *ngFor="let fruit of fruits" class="fruit select" [class.selected]="fruit === selectedFruit"
       routerLink="/detail/{{fruit.id}}">
       <h2 class="fruit-name-h-select">{{fruit.name}}</h2>
+      <button class="delete" (click)="delete(fruit)">DELETE</button>
     </li>
   </ul>
 
-  <!-- <app-fruit-detail [fruit]="selectedFruit" class="fruit-list"></app-fruit-detail> -->
+  <div class="add-fruit">
+    <h2>ADD YOUR OWN FRUIT HERE</h2>
+    <label>Fruit Name: <input #fruitName /></label>
+    <label>Is Sweet? <input type="checkbox" #fruitIsSweet />Yes!</label>
+    <label>Is it a fruit? <input type="checkbox" #fruitIsFruit />Yes!</label>
+    <button (click)="add(fruitName.value, fruitIsSweet.value, fruitIsFruit.value); fruitName.value=''" class="add-fruit-button">ADD</button>
+  </div>
+
 </main>
