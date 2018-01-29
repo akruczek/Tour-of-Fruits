@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@keyframes point {
+  from { background-color: darkgrey; }
+  to { background-color: lightblue; }
+}
+
+@keyframes slideUp {
+  from {width: 0;}
+  to {width: max;}
+}
+
+@keyframes show {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes showUp {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes select {
+  from { background-color: lightblue; }
+  to { background-color: lightgrey; }
+}

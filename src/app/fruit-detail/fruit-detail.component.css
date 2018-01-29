@@ -57,8 +57,3 @@
   box-shadow: 1px 1px 1px 1px black;
   cursor: pointer;
 }
-
-@keyframes showUp {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}

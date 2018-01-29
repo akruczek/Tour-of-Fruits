@@ -30,14 +30,10 @@ button {
   font-size: 16px;
   font-weight: 600;
   background-color: darkgrey;
+  cursor: pointer;
 }
 
-@keyframes slideUp {
-  from {width: 0;}
-  to {width: max;}
-}
-
-@keyframes show {
-  from {opacity: 0;}
-  to {opacity: 1;}
+button:hover {
+  background-color: lightblue;
+  animation: point 0.3s;
 }

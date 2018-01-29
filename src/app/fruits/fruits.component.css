@@ -99,8 +99,3 @@ label {
   background-color: rgba(255, 100, 0, 10);
   align-self: flex-end;
 }
-
-@keyframes select {
-  from { background-color: lightblue; }
-  to { background-color: lightgrey; }
-}
